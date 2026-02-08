@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<html> 
+     <head> 
+             <meta charset="utf-8"> 
+             <title> Kisielow Z4_HTML </title> 
+     </head> 
+    <body>
+
+
+	<h1> Pięć sposobów podłączania CSS do kodu strony WWW </h1>
+
+
+ 		<h2> 1) <u> Zewnętrzny </u> arkusz stylów. </h2>
+
+<h3>
+
+	&lthead&gt
+<br>
+	&ltlink rel="Stylesheet" type="text/css" href="style.css" /&gt
+<br>
+	&lt/head&gt
+
+</h3>
+
+		<h2> 2) <u> Styl lokalny </u>, inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.</h2>
+
+<h3>
+	&ltselektor style="cecha1: wartość1; cecha2: wartość2..."&gt...&lt/selektor&gt 
+</h3>
+
+		<h2> 3) <u> Wewnętrzny </u> arkusz stylów. </h2>
+<h3>
+
+&lthead&gt 
+<br>
+&ltstyle type="text/css"&gt 
+<br>
+selektor1 { cecha: wartość; cecha2: wartość2... } 
+<br>
+selektor2 { cecha: wartość; cecha2: wartość2... } 
+<br>
+&lt/style&gt
+<br>
+&lt/head&gt 
+
+</h3>
+
+
+		<h2> 4) <u> Alternatywny </u> arkusz stylów. </h2>
+<h3>
+
+&lthead&gt
+<br>
+&ltlink rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt
+<br>
+&ltlink rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt
+<br<
+&ltlink rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt
+<br>
+<br>
+&lt/head&gt
+
+</h3>
+
+
+		<h2> 5) <u> Import </u> arkusza stylów. </h2>
+
+<h3>
+
+&ltstyle type="text/css"&gt 
+@import url(adres zewnętrznego arkusza stylów); 
+&lt/style&gt
+
+</h3>
+
+		<!--  Kisielow Z4_html  --> 
+
+    </body> 
+  </html> 
